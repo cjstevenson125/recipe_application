@@ -9,7 +9,7 @@ dotenv_path = os.path.join(APP_ROOT, '.env')
 load_dotenv(dotenv_path)
 
 #mongo = os.getenv('MONGO')
-
+mongo = "mongodb+srv://recipe_user:1ZIXhHnLNObM2xLR@cluster0.kbccv.mongodb.net/recipe_db?retryWrites=true&w=majority"
 client = pymongo.MongoClient(mongo)
 
 db = client['recipe_db']
