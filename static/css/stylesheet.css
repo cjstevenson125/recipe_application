@@ -4,4 +4,10 @@ label.print{
 }
 
 
+
 .bgcolor {background-color:blue !important;}
+
+img {
+  width: 200px,
+  height: auto
+}
