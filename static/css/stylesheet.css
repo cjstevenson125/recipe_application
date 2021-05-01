@@ -3,6 +3,11 @@ label.print{
   font-weight: bold;
 }
 
+.btn-primary:{background-color: blue; color: black !important; border: lightblue  !important; }
+
+
+
+
 
 
 .bgcolor {background-color:blue !important;}

@@ -5,9 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %} {% endblock%}</title>
+  {% block pageDescription %} {% endblock %}
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static" , filename='css/stylesheet.css' ) }}" />
+
+
+
+  <meta name="description" content="Page description. No longer than 155 characters." />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@publisher_handle">
+  <meta name="twitter:title" content="ConnorsRecipes.com">
+  <meta name="twitter:description"
+    content="A recipe site for anyone and everyone who does not want to spend much time or energy into cooking meals.">
+  <meta name="twitter:creator" content="@author_handle">
+  <-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="http://www.example.com/static/browsers.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="ConnorsRecipes.com" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://www.example.com/static/browsers.jpg" />
+    <meta property="og:description" content="A recipe site for anyone and everyone who does not want to spend much time or energy into cooking meals." />
+    <meta property="og:site_name" content="ConnorsRecipes" />
+    
+
+
 
 </head>
 
@@ -15,16 +45,9 @@
   <div class="container bgcolor">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="/">
-        <img src="../static/logo.jpg">
+        <img src="../static/logo.jpg" alt="My personal logo for my recipe database">
       </a>
-      <style>
-        div {
-          height: 100px;
-          text-align: center;
-          padding: 15px;
-          border: 3px blue;
-        }
-      </style>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -123,6 +146,20 @@
 
 
     <!-- Add & Remove Ingredients & Preparation Steps  -->
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XH401H9HQY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XH401H9HQY');
+</script>
+
+
+
     <script>
       $(document).ready(function () {
         // Add & Remove Ingredients
@@ -208,6 +245,7 @@
 
 
     </script>
+
 
 
   </div>
